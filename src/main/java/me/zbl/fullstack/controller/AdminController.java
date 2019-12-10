@@ -101,7 +101,7 @@ public class AdminController extends BaseController {
     }
 
     /**
-     * 发布文章
+     * 发布 文章
      */
     @PostMapping("/blogadd.f")
     public String fAdminBlogAdd(BlogAddForm blogAddForm) {
