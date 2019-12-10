@@ -143,7 +143,7 @@ var EventInit = function () {
 function deleteAdminUserInBulk() {
     idsArr = [];
     dataSel = $('#id_table_blog').bootstrapTable('getSelections');
-    if(dataSel.length<1){
+    if (dataSel.length < 1) {
         msg("至少得选一行吧");
         return;
     }
@@ -166,7 +166,7 @@ function deleteAdminUserInBulk() {
             msg("完成删除，刚才的用户永远的离你而去了");
             flushTable();
         },
-        error:function () {
+        error: function () {
             msg("删除失败");
         }
     });

@@ -26,10 +26,10 @@ textarea {
     resize: vertical;
 }
 
-.img_shadow{
+.img_shadow {
     box-shadow: 0px 0px 7px #333333;
 }
 
-.txt_shadow{
-    text-shadow:0px 0px 7px #2f2f2f;
+.txt_shadow {
+    text-shadow: 0px 0px 7px #2f2f2f;
 }
