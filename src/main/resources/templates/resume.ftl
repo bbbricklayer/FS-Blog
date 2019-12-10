@@ -9,14 +9,14 @@
 
     <title>${article.title!'全栈博客'}</title>
 
-<#-- EditorMD -->
+    <#-- EditorMD -->
     <link href="/vendor/editor/css/editormd.css" rel="stylesheet">
 
-<#-- 自定义 样式 -->
-<#include "public/front_custom_css.ftl">
+    <#-- 自定义 样式 -->
+    <#include "public/front_custom_css.ftl">
 
-<#-- CSS -->
-<#include "public/front_css.ftl">
+    <#-- CSS -->
+    <#include "public/front_css.ftl">
 </head>
 
 <body>
@@ -27,14 +27,14 @@
 <#-- e-nav.ftl -->
 
 <div class="container container-fluid cus_content">
-<#-- 博客标题 -->
+    <#-- 博客标题 -->
     <div class="row mt-md-5"></div>
     <div class="row mt-md-5">
-    <#-- 博客内容 -->
+        <#-- 博客内容 -->
         ${article.htmlMaterial!'文章内容'}
-        </div>
     </div>
-    <div class="row mb-md-5"></div>
+</div>
+<div class="row mb-md-5"></div>
 </div>
 
 

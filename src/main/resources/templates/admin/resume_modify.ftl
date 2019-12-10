@@ -43,22 +43,22 @@
 <body>
 
 <div id="wrapper">
-<#-- s 导航 -->
-<#include "public/nav.ftl">
-<#-- e 导航 -->
+    <#-- s 导航 -->
+    <#include "public/nav.ftl">
+    <#-- e 导航 -->
 
-<#-- s 页面内容 -->
-    <div id="page-wrapper">
     <#-- s 页面内容 -->
+    <div id="page-wrapper">
+        <#-- s 页面内容 -->
         <form id="id_form_resume">
-        <#-- s 隐藏字段 -->
+            <#-- s 隐藏字段 -->
             <input name="mdMaterial" id="id_input_md" type="hidden">
             <input name="htmlMaterial" id="id_input_html" type="hidden">
             <#--<input name="description" id="id_input_article_description" type="hidden">-->
             <#--<input name="id" id="id_input_article_id" type="hidden" value=${article.id!0}>-->
-        <#--<input name="rawTags" id="id_input_article_tags" type="hidden">-->
-        <#-- e 隐藏字段 -->
-        <#-- s 标题、标签等 -->
+            <#--<input name="rawTags" id="id_input_article_tags" type="hidden">-->
+            <#-- e 隐藏字段 -->
+            <#-- s 标题、标签等 -->
             <div class="row">
                 <div class="col-sm-12">
                     <div class="input-group">
@@ -74,19 +74,19 @@
                     </div>
                 </div>
             </div>
-        <#-- e 标题 -->
+            <#-- e 标题 -->
         </form>
         <div class="row">
             <div class="col-sm-12">
                 <div id="test-editormd">
-                <#-- 文章内容 -->
+                    <#-- 文章内容 -->
                     <textarea style="display:none;"> ${article.mdMaterial!""}</textarea>
                 </div>
             </div>
         </div>
-    <#-- e 页面内容 -->
+        <#-- e 页面内容 -->
     </div>
-<#-- e 页面内容 -->
+    <#-- e 页面内容 -->
 
 </div>
 
@@ -100,13 +100,13 @@
                 <h4 class="modal-title">文章详情</h4>
             </div>
             <div class="modal-body">
-            <#-- s 模态内容 -->
+                <#-- s 模态内容 -->
                 确认提交吗？
-            <#--<div class="form-group">-->
-            <#--<label for="id_input_article_tags_in_modal">为文章添加标签（以逗号分隔）</label>-->
-            <#--<input type="text" class="form-control" id="id_input_article_tags_in_modal" placeholder="Tags">-->
-            <#--</div>-->
-            <#-- e 模态内容 -->
+                <#--<div class="form-group">-->
+                <#--<label for="id_input_article_tags_in_modal">为文章添加标签（以逗号分隔）</label>-->
+                <#--<input type="text" class="form-control" id="id_input_article_tags_in_modal" placeholder="Tags">-->
+                <#--</div>-->
+                <#-- e 模态内容 -->
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>

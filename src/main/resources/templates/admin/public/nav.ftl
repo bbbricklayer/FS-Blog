@@ -1,7 +1,7 @@
 <#-- s 导航（顶部、左侧）-->
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 
-<#-- s 导航左侧 -->
+    <#-- s 导航左侧 -->
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -11,9 +11,9 @@
         </button>
         <a class="navbar-brand" href="index.html">Full-Stack 系统后台管理</a>
     </div>
-<#-- e 导航左侧-->
+    <#-- e 导航左侧-->
 
-<#-- s 导航右侧 -->
+    <#-- s 导航右侧 -->
     <ul class="nav navbar-top-links navbar-right">
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -32,9 +32,9 @@
         </li>
         <!-- /.dropdown -->
     </ul>
-<#-- e 导航右侧-->
+    <#-- e 导航右侧-->
 
-<#-- s 侧边栏 -->
+    <#-- s 侧边栏 -->
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
@@ -60,6 +60,6 @@
         </div>
         <!-- /.sidebar-collapse -->
     </div>
-<#-- e 侧边栏 -->
+    <#-- e 侧边栏 -->
 </nav>
 <#-- e 导航（顶部、左侧）-->

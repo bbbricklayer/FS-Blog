@@ -47,20 +47,20 @@
 <body>
 
 <div id="wrapper">
-<#-- s 导航 -->
-<#include "public/nav.ftl">
-<#-- e 导航 -->
+    <#-- s 导航 -->
+    <#include "public/nav.ftl">
+    <#-- e 导航 -->
 
-<#-- s 页面内容 -->
-    <div id="page-wrapper">
     <#-- s 页面内容 -->
+    <div id="page-wrapper">
+        <#-- s 页面内容 -->
         <!-- 按钮组 -->
         <div id="toolbar" class="btn-group">
             <#--<button id="id_btn_add" type="button" class="btn btn-default">-->
-                <#--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新增-->
+            <#--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新增-->
             <#--</button>-->
             <#--<button id="id_btn_edit" type="button" class="btn btn-default">-->
-                <#--<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 修改-->
+            <#--<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 修改-->
             <#--</button>-->
             <button id="id_btn_delete" type="button" class="btn btn-default">
                 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 删除
@@ -71,9 +71,9 @@
 
         </table>
         <!-- e 表格 -->
-    <#-- e 页面内容 -->
+        <#-- e 页面内容 -->
     </div>
-<#-- e 页面内容 -->
+    <#-- e 页面内容 -->
 
 </div>
 

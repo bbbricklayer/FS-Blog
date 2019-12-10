@@ -9,17 +9,17 @@
 
     <title>${articleTitle!'全栈博客'}</title>
 
-<#-- EditorMD -->
+    <#-- EditorMD -->
     <link href="/vendor/editor/css/editormd.css" rel="stylesheet">
 
-<#-- landing-page -->
+    <#-- landing-page -->
     <link rel="stylesheet" href="/vendor/landing-page/landing-page.min.css">
 
-<#-- 自定义 样式 -->
-<#include "public/front_custom_css.ftl">
+    <#-- 自定义 样式 -->
+    <#include "public/front_custom_css.ftl">
 
-<#-- CSS -->
-<#include "public/front_css.ftl">
+    <#-- CSS -->
+    <#include "public/front_css.ftl">
 </head>
 
 <body>
@@ -42,37 +42,37 @@
     </div>
 </header>
 <div class="container container-fluid mt-5 mb-5">
-<#--<img src="http://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg" alt="">-->
+    <#--<img src="http://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg" alt="">-->
     <div class="row">
-    <#-- s 左侧 -->
+        <#-- s 左侧 -->
         <div class="col-md-8">
             <ul class="list-unstyled">
-            <#if postlist??>
-                <#if (postlist?size>0)>
-                    <#list postlist as post>
-                        <div class="card mt-3">
-                            <div class="card-body">
-                                <a href="/blog/${post.id!""}" class="text-dark" target="_blank"><h4
-                                        class="card-title font-weight-bold">${post.title!""}</h4>
-                                </a>
-                                <p class="card-text">${post.description}</p>
-                                <p class="text-right text-secondary">${post.dateTime!""}</p>
+                <#if postlist??>
+                    <#if (postlist?size>0)>
+                        <#list postlist as post>
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <a href="/blog/${post.id!""}" class="text-dark" target="_blank"><h4
+                                                class="card-title font-weight-bold">${post.title!""}</h4>
+                                    </a>
+                                    <p class="card-text">${post.description}</p>
+                                    <p class="text-right text-secondary">${post.dateTime!""}</p>
+                                </div>
+                            </div>
+                        </#list>
+                    <#else>
+                        <div class="card border-danger mt-3 mb-3">
+                            <div class="card-body text-danger">
+                                <h2 class="card-title"><i class="fa fa-warning fa-1x"></i> 抱歉，没有找到相关内容</h2>
+                                <p class="card-text">试试其他关键字？</p>
                             </div>
                         </div>
-                    </#list>
-                <#else>
-                    <div class="card border-danger mt-3 mb-3">
-                        <div class="card-body text-danger">
-                            <h2 class="card-title"><i class="fa fa-warning fa-1x"></i> 抱歉，没有找到相关内容</h2>
-                            <p class="card-text">试试其他关键字？</p>
-                        </div>
-                    </div>
+                    </#if>
                 </#if>
-            </#if>
             </ul>
         </div>
-    <#-- e 左侧 -->
-    <#-- s 右侧 -->
+        <#-- e 左侧 -->
+        <#-- s 右侧 -->
         <div class="col-md-4 mt-3">
             <div class="card mb-3">
                 <div class="card-header">
@@ -90,24 +90,24 @@
                 </div>
             </div>
         </div>
-    <#if taglist??>
-        <div class="card mb-3">
-            <div class="card-header">
-                热门标签
+        <#if taglist??>
+            <div class="card mb-3">
+                <div class="card-header">
+                    热门标签
+                </div>
+                <div class="card-body">
+                    <#list taglist as tag>
+                        <!-- tag -->
+                        <a href="/post?tagId=${tag.tagId!''}" target="_blank">
+                            <button type="button" class="btn btn-outline-primary mb-3">
+                                ${tag.tagName!""} <span class="badge badge-primary">${tag.articleCount!""}</span>
+                            </button>
+                        </a>
+                    </#list>
+                </div>
             </div>
-            <div class="card-body">
-                <#list taglist as tag>
-                    <!-- tag -->
-                    <a href="/post?tagId=${tag.tagId!''}" target="_blank">
-                        <button type="button" class="btn btn-outline-primary mb-3">
-                        ${tag.tagName!""} <span class="badge badge-primary">${tag.articleCount!""}</span>
-                        </button>
-                    </a>
-                </#list>
-            </div>
-        </div>
-    </#if>
-    <#-- e 右侧 -->
+        </#if>
+        <#-- e 右侧 -->
     </div>
 </div>
 </div>

@@ -42,11 +42,11 @@
 <body>
 
 <div id="wrapper">
-<#-- s 导航 -->
-<#include "public/nav.ftl">
-<#-- e 导航 -->
+    <#-- s 导航 -->
+    <#include "public/nav.ftl">
+    <#-- e 导航 -->
 
-<#-- s 页面内容 -->
+    <#-- s 页面内容 -->
     <div id="page-wrapper">
         <div class=".container-fluid">
             <div class="row">
@@ -77,7 +77,7 @@
         </div>
 
     </div>
-<#-- e 页面内容 -->
+    <#-- e 页面内容 -->
 
 </div>
 

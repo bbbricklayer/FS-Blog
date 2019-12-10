@@ -15,21 +15,21 @@ spring:
     charset: utf-8
     ######## todo 发布版本时同步更新 ***-prod.yml ########
     view-names: index,
-                error,
-                userlogin,
-                adminlogin,
-                register,
-                article,
-                posts,
-                resume,
-                admin/index,
-                admin/userlogin,
-                admin/blogadd,
-                admin/blog_manage,
-                admin/blog_modify,
-                admin/admin_user_manage,
-                admin/admin_user_pwd_modify,
-                admin/resume_modify
+      error,
+      userlogin,
+      adminlogin,
+      register,
+      article,
+      posts,
+      resume,
+      admin/index,
+      admin/userlogin,
+      admin/blogadd,
+      admin/blog_manage,
+      admin/blog_modify,
+      admin/admin_user_manage,
+      admin/admin_user_pwd_modify,
+      admin/resume_modify
     #####################################
     content-type: text/html
     allow-request-override: true
@@ -53,7 +53,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     username: root
-    password: root
+    password: 123456
     url: jdbc:mysql://127.0.0.1:3306/fsblog?useUnicode:true&amp;characterEncoding:UTF-8
     driverClassName: com.mysql.jdbc.Driver
     sql-script-encoding: UTF-8
@@ -70,26 +70,26 @@ spring:
         ddl-auto: none
 
 server:
-  port: 8083
+  port: 8888
   max-http-header-size: 8192
   compression:
-      min-response-size: 512
-      enabled: true
-      mime-types: text/html,text/css,text/javascript,application/javascript,image/gif,image/png,image/jpg
+    min-response-size: 512
+    enabled: true
+    mime-types: text/html,text/css,text/javascript,application/javascript,image/gif,image/png,image/jpg
   tomcat:
-        maxThreads: 12
-        minSpareThreads: 3
-        accesslog:
-          directory: /home/fullstack/app/fullstack
-          pattern: combined
-          enabled: true
+    maxThreads: 12
+    minSpareThreads: 3
+    accesslog:
+      directory: /home/fullstack/app/fullstack
+      pattern: combined
+      enabled: true
   session:
     cookie:
       max-age: 1800
 
 logging:
-    config: classpath:log4j2.xml
+  config: classpath:log4j2.xml
 
 mybatis:
-    type-aliases-package: me.zbl.fullstack.entity
-    mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: me.zbl.fullstack.entity
+  mapper-locations: classpath:mapping/*.xml

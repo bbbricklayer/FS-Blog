@@ -41,19 +41,19 @@
     <link rel="stylesheet" href="/css/public.css">
 
     <!-- 后台通用 css -->
-<#include "public/public_css.ftl">
+    <#include "public/public_css.ftl">
 </head>
 
 <body>
 
 <div id="wrapper">
-<#-- s 导航 -->
-<#include "public/nav.ftl">
-<#-- e 导航 -->
+    <#-- s 导航 -->
+    <#include "public/nav.ftl">
+    <#-- e 导航 -->
 
-<#-- s 页面内容 -->
-    <div id="page-wrapper">
     <#-- s 页面内容 -->
+    <div id="page-wrapper">
+        <#-- s 页面内容 -->
         <!-- 按钮组 -->
         <div id="toolbar" class="btn-group">
             <button id="id_btn_add" type="button" class="btn btn-default">
@@ -71,9 +71,9 @@
 
         </table>
         <!-- e 表格 -->
-    <#-- e 页面内容 -->
+        <#-- e 页面内容 -->
     </div>
-<#-- e 页面内容 -->
+    <#-- e 页面内容 -->
 
 </div>
 

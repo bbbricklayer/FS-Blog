@@ -38,11 +38,11 @@
 <body>
 
 <div id="wrapper">
-<#-- s 导航 -->
-<#include "public/nav.ftl">
-<#-- e 导航 -->
+    <#-- s 导航 -->
+    <#include "public/nav.ftl">
+    <#-- e 导航 -->
 
-<#-- s 页面内容 -->
+    <#-- s 页面内容 -->
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
@@ -622,7 +622,7 @@
         </div>
         <!-- /.row -->
     </div>
-<#-- e 页面内容 -->
+    <#-- e 页面内容 -->
 
 </div>
 
