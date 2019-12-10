@@ -13,10 +13,10 @@ import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 @Configuration
 public class ValidatorConfig {
 
-  @Bean(name = "validator")
-  public LocalValidatorFactoryBean getValidator() {
-    LocalValidatorFactoryBean bean = new LocalValidatorFactoryBean();
-    bean.setProviderClass(HibernateValidator.class);
-    return bean;
-  }
+    @Bean(name = "validator")
+    public LocalValidatorFactoryBean getValidator() {
+        LocalValidatorFactoryBean bean = new LocalValidatorFactoryBean();
+        bean.setProviderClass(HibernateValidator.class);
+        return bean;
+    }
 }
