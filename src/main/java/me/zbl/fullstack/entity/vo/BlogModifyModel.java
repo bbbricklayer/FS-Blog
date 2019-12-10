@@ -18,20 +18,20 @@ import org.hibernate.validator.constraints.NotEmpty;
 @NoArgsConstructor
 public class BlogModifyModel {
 
-  @NotEmpty
-  private Integer id;
+    @NotEmpty
+    private Integer id;
 
-  @NotEmpty
-  private String title;
+    @NotEmpty
+    private String title;
 
-  private String mdMaterial;
+    private String mdMaterial;
 
-  private String description;
+    private String description;
 
-  public BlogModifyModel(Article article) {
-    this.id = article.getId();
-    this.title = article.getTitle();
-    this.mdMaterial = article.getMdMaterial();
-    this.description = article.getIntroduction();
-  }
+    public BlogModifyModel(Article article) {
+        this.id = article.getId();
+        this.title = article.getTitle();
+        this.mdMaterial = article.getMdMaterial();
+        this.description = article.getIntroduction();
+    }
 }

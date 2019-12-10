@@ -17,12 +17,12 @@ import me.zbl.fullstack.entity.Tag;
 @AllArgsConstructor
 public class TagView {
 
-  private Integer tagId;
-  private String tagName;
-  private Integer articleCount;
+    private Integer tagId;
+    private String tagName;
+    private Integer articleCount;
 
-  public TagView(Tag tag) {
-    this.tagId = tag.getId();
-    this.tagName = tag.getName();
-  }
+    public TagView(Tag tag) {
+        this.tagId = tag.getId();
+        this.tagName = tag.getName();
+    }
 }

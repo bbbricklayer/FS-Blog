@@ -7,5 +7,5 @@ package me.zbl.fullstack.consts;
  */
 public class UrlConsts {
 
-  static final String IMG_LOCAL_PATH = "";
+    static final String IMG_LOCAL_PATH = "";
 }

@@ -11,10 +11,10 @@ import java.util.List;
  */
 public interface ITagService {
 
-  /**
-   * 获取所有 Tag 视图
-   *
-   * @return Tag 视图
-   */
-  List<TagView> getAllTagView();
+    /**
+     * 获取所有 Tag 视图
+     *
+     * @return Tag 视图
+     */
+    List<TagView> getAllTagView();
 }

@@ -252,7 +252,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableCaching
 public class FullstackApplication {
 
-  public static void main(String[] args) {
-    SpringApplication.run(FullstackApplication.class, args);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(FullstackApplication.class, args);
+    }
 }

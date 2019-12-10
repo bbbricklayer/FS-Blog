@@ -19,21 +19,21 @@ import java.util.Date;
 @AllArgsConstructor
 public class ArticleDataGridView {
 
-  private Integer id;
+    private Integer id;
 
-  private String title;
+    private String title;
 
-  private Date gmtCreate;
+    private Date gmtCreate;
 
-  private Date gmtModified;
+    private Date gmtModified;
 
-  private String introduction;
+    private String introduction;
 
-  public ArticleDataGridView(Article article) {
-    this.id = article.getId();
-    this.title = article.getTitle();
-    this.gmtModified = article.getGmtModified();
-    this.gmtCreate = article.getGmtCreate();
-    this.introduction = article.getIntroduction();
-  }
+    public ArticleDataGridView(Article article) {
+        this.id = article.getId();
+        this.title = article.getTitle();
+        this.gmtModified = article.getGmtModified();
+        this.gmtCreate = article.getGmtCreate();
+        this.introduction = article.getIntroduction();
+    }
 }

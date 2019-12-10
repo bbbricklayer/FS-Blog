@@ -17,9 +17,9 @@ import org.hibernate.validator.constraints.NotEmpty;
 @AllArgsConstructor
 public class ArticleSearchForm {
 
-  /**
-   * 文章标题
-   */
-  @NotEmpty
-  private String name;
+    /**
+     * 文章标题
+     */
+    @NotEmpty
+    private String name;
 }

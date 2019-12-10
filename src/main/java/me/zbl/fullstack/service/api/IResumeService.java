@@ -27,15 +27,15 @@ import me.zbl.fullstack.entity.dto.form.ResumeModifyForm;
  */
 public interface IResumeService {
 
-  /**
-   * 查询简历
-   */
-  Resume getResume();
+    /**
+     * 查询简历
+     */
+    Resume getResume();
 
-  /**
-   * 更新简历
-   *
-   * @param form 表单
-   */
-  void updateResume(ResumeModifyForm form, Resume resume);
+    /**
+     * 更新简历
+     *
+     * @param form 表单
+     */
+    void updateResume(ResumeModifyForm form, Resume resume);
 }

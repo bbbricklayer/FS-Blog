@@ -20,13 +20,13 @@ import org.hibernate.validator.constraints.NotEmpty;
 @AllArgsConstructor
 public class AdminUserPwdModifyForm {
 
-  @NotEmpty
-  @Length(max = DataConsts.PASSWORD_MAX_LENGTH)
-  private String oriPwd;
-  @NotEmpty
-  @Length(max = DataConsts.PASSWORD_MAX_LENGTH)
-  private String newPwd;
-  @NotEmpty
-  @Length(max = DataConsts.PASSWORD_MAX_LENGTH)
-  private String confirmPwd;
+    @NotEmpty
+    @Length(max = DataConsts.PASSWORD_MAX_LENGTH)
+    private String oriPwd;
+    @NotEmpty
+    @Length(max = DataConsts.PASSWORD_MAX_LENGTH)
+    private String newPwd;
+    @NotEmpty
+    @Length(max = DataConsts.PASSWORD_MAX_LENGTH)
+    private String confirmPwd;
 }

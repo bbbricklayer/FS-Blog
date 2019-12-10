@@ -18,5 +18,5 @@ import java.util.List;
 @ToString
 public class TableKeyModel {
 
-  private List<Integer> ids;
+    private List<Integer> ids;
 }

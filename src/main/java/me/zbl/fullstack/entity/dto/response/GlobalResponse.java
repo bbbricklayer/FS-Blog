@@ -12,15 +12,15 @@ import lombok.Setter;
 @Setter
 public class GlobalResponse {
 
-  protected int resultCode;
-  protected boolean hasError;
+    protected int resultCode;
+    protected boolean hasError;
 
-  private GlobalResponse() {
+    private GlobalResponse() {
 
-  }
+    }
 
-  public GlobalResponse(int resultCode, boolean hasError) {
-    this.resultCode = resultCode;
-    this.hasError = hasError;
-  }
+    public GlobalResponse(int resultCode, boolean hasError) {
+        this.resultCode = resultCode;
+        this.hasError = hasError;
+    }
 }

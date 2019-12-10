@@ -30,20 +30,20 @@ import org.springframework.stereotype.Service;
 @Service
 public class ResumeServiceImpl implements IResumeService {
 
-  @Autowired
-  private ResumeMapper mResumeMapper;
+    @Autowired
+    private ResumeMapper mResumeMapper;
 
 
-  @Override
-  public Resume getResume() {
-    return mResumeMapper.selectAll().get(0);
-  }
+    @Override
+    public Resume getResume() {
+        return mResumeMapper.selectAll().get(0);
+    }
 
-  @Override
-  public void updateResume(ResumeModifyForm form, Resume resume) {
-    resume.setId(1);
-    resume.setHtmlMaterial(form.getHtmlMaterial());
-    resume.setMdMaterial(form.getMdMaterial());
-    mResumeMapper.updateByPrimaryKeySelective(resume);
-  }
+    @Override
+    public void updateResume(ResumeModifyForm form, Resume resume) {
+        resume.setId(1);
+        resume.setHtmlMaterial(form.getHtmlMaterial());
+        resume.setMdMaterial(form.getMdMaterial());
+        mResumeMapper.updateByPrimaryKeySelective(resume);
+    }
 }

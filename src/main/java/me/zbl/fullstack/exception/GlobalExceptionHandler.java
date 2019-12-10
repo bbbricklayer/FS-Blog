@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(GlobalExceptionHandler.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
-  @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-  @ExceptionHandler(Exception.class)
-  public String handleException(Exception e, Model model) {
-    model.addAttribute("msg", e.getLocalizedMessage());
-    e.printStackTrace();
-    return "redirect:error";
-  }
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    @ExceptionHandler(Exception.class)
+    public String handleException(Exception e, Model model) {
+        model.addAttribute("msg", e.getLocalizedMessage());
+        e.printStackTrace();
+        return "redirect:error";
+    }
 }

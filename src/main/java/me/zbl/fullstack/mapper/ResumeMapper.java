@@ -10,5 +10,5 @@ import me.zbl.fullstack.framework.mapper.IMyMapper;
  */
 public interface ResumeMapper extends IMyMapper<Resume> {
 
-  String COLUMN_LIST = "resume.id,title,introduction,resume.gmt_create AS gmtCreate,resume.gmt_modified AS gmtModified";
+    String COLUMN_LIST = "resume.id,title,introduction,resume.gmt_create AS gmtCreate,resume.gmt_modified AS gmtModified";
 }

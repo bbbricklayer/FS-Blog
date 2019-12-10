@@ -19,21 +19,21 @@ import java.util.List;
 @Service
 public class TagServiceImpl extends BaseViewTransableService<Tag, TagView> implements ITagService {
 
-  @Autowired
-  TagMapper mTagMapper;
+    @Autowired
+    TagMapper mTagMapper;
 
-  @Override
-  protected List<TagView> transEntityToView(List<Tag> entityList) {
-    List<TagView> tagViews = new ArrayList<>();
-    for (Tag tag : entityList) {
-      TagView tagView = new TagView(tag);
-      tagViews.add(tagView);
+    @Override
+    protected List<TagView> transEntityToView(List<Tag> entityList) {
+        List<TagView> tagViews = new ArrayList<>();
+        for (Tag tag : entityList) {
+            TagView tagView = new TagView(tag);
+            tagViews.add(tagView);
+        }
+        return tagViews;
     }
-    return tagViews;
-  }
 
-  @Override
-  public List<TagView> getAllTagView() {
-    return mTagMapper.selectAllTagView();
-  }
+    @Override
+    public List<TagView> getAllTagView() {
+        return mTagMapper.selectAllTagView();
+    }
 }
